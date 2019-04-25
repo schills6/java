@@ -13,11 +13,10 @@ public class TableOfPowersApp {
 			System.out.print("Enter an integer: ");
 			int x = sc.nextInt();
 
-			// display header rows
+			// Business Logic
 			System.out.println("Number\tSquared\tCubed");
 			System.out.println("=====\t=======\t=====");
 			for (int i = 1; i <= x; i++) {
-				// Business Logic
 				int square = i * i;
 				int cube = i * i * i;
 
@@ -26,11 +25,12 @@ public class TableOfPowersApp {
 			}
 			System.out.println("Continue? (y/n)");
 			System.out.println();
-			choice=sc.next();
+			choice = sc.next();
 		}
-		
+
 		// Bye
 		System.out.println("Goodbye!");
+		sc.close();
 
 	}
 
