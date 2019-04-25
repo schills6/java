@@ -10,25 +10,29 @@ public class TableOfPowersApp {
 
 		// Prompt User Input
 		while (choice.equalsIgnoreCase("y")) {
+			System.out.println();
 			System.out.print("Enter an integer: ");
-			int x = sc.nextInt();
+			int n = sc.nextInt();
 
 			// Business Logic
+			System.out.println();
 			System.out.println("Number\tSquared\tCubed");
-			System.out.println("=====\t=======\t=====");
-			for (int i = 1; i <= x; i++) {
+			System.out.println("======\t=======\t=====");
+			for (int i = 1; i <= n; i++) {
 				int square = i * i;
 				int cube = i * i * i;
 
 				// Display Results
 				System.out.println(+i + "\t" + square + "\t" + cube);
 			}
-			System.out.println("Continue? (y/n)");
 			System.out.println();
+			System.out.print("Continue? (y/n) ");
 			choice = sc.next();
+			System.out.println();
 		}
 
 		// Bye
+		System.out.println();
 		System.out.println("Goodbye!");
 		sc.close();
 
