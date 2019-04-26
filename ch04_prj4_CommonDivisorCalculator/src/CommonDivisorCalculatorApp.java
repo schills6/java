@@ -30,7 +30,8 @@ public class CommonDivisorCalculatorApp {
 			// Display Results
 
 			System.out.println("Greatest common divisor: " + y);
-			System.out.print("Continue? (y/n)");
+			System.out.println();
+			System.out.print("Continue? (y/n) ");
 			choice = sc.next();
 			System.out.println();
 

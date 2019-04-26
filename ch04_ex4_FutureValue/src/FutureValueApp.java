@@ -20,8 +20,10 @@ public class FutureValueApp {
             NumberFormat percent = NumberFormat.getPercentInstance();
             percent.setMaximumFractionDigits(1);
             System.out.print("Enter interest rate:        ");
-            double interestRate = 0.0;
-            interestRate = sc.next();
+            double interestRate = 0;
+            interestRate = sc.nextDouble();
+            interestRate /= 12;
+            double monthlyInterestRate = interestRate;
             String interestRateString = percent.format(interestRate);
             
             NumberFormat currency = NumberFormat.getCurrencyInstance();

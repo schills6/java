@@ -23,7 +23,7 @@ public class TableOfPowersApp {
 				int cube = i * i * i;
 
 				// Display Results
-				System.out.println(+i + "\t" + square + "\t" + cube);
+				System.out.println(i + "\t" + square + "\t" + cube);
 			}
 			System.out.println();
 			System.out.print("Continue? (y/n) ");
