@@ -10,7 +10,7 @@ public class NumberCheckerApp {
 
 			// Prompt for User Input
 			System.out.println();
-			int userEntry = mc.oddOrEven("Enter an integer: ");
+			mc.oddOrEven("Enter an integer: ");
 			
 			// Business Logic
 

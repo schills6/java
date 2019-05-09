@@ -22,8 +22,7 @@ public class MyConsole extends Console {
 
 	public int oddOrEven(String prompt) {
 		int i = getInt(prompt);
-		int oi = 1;
-		oi = i;
+		int oi = i;
 		oi %= 2;
 		if (oi == 0) {
 			System.out.println("The number " + i + " is even.");
